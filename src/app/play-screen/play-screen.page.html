@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-item>
+    <ion-title>{{nick}}</ion-title>
+    <ion-button fill="clear" routerLink="/create-user">
+      <ion-icon name="exit" size="large"></ion-icon>
+    </ion-button>
+  </ion-item>
+</ion-header>
+
+<ion-content>
+  <p>High Score: {{score}}</p>
+  <br>
+  <ion-icon color="{{color}}" size="large" name="heart" [ngStyle]="{'background-color': (greenLight) ? '#73c7af' : '#ffffff'}"></ion-icon>
+  <p>score: {{score}}</p>
+  <button ion-button (click)="moveLeft()">left</button>
+  <button ion-button (click)="moveRigth()">right</button>
+  <p>Timer: {{val}}</p>
+  <p>delay: {{lengthTimer}}</p>
+  <p>Ligth: {{greenLight}}</p>
+</ion-content>

@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": ".\\game-ionic-pwa\\",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
