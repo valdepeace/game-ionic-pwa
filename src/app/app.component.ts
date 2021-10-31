@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { UserService } from './api/user.service';
+import { UserService } from './service/user.service';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -15,9 +15,9 @@ export class AppComponent {
     { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
-  
+
   constructor() {
 
   }
- 
+
 }

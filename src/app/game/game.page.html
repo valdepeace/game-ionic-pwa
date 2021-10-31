@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-item>
+    <ion-title>{{nick}}</ion-title>
+    <ion-button id="button_exit" fill="clear" (click)="exit()">
+      <ion-icon name="exit" size="large"></ion-icon>
+    </ion-button>
+  </ion-item>
+</ion-header>
+
+<ion-content>
+  
+
+  <ion-col>
+    <ion-row class="ion-justify-content-center">
+      <ion-label>High Score: {{score}}</ion-label>
+    </ion-row>
+  </ion-col>
+  <ion-col>
+    <ion-row class="ion-justify-content-center">
+      <div id="theGuy" [ngClass]="{'facing-left':left}" [style.background-position.px]="walkPos"
+        [style.left.px]="walkDivPos">        
+          <img src="/assets/images/brick-wall.jpg" [ngStyle]="{display: 'none'}">        
+      </div>
+        
+      </ion-row>
+  </ion-col>
+  <ion-col>
+    <ion-row class="ion-justify-content-center">
+      <ion-label class="">score: {{score}}</ion-label>
+    </ion-row>
+  </ion-col>
+  <ion-col>
+    <ion-row class="ion-justify-content-center">
+      <ion-button id="button_moveleft" color="primary" (click)="moveLeft()">left</ion-button>
+      <ion-button id="button_moverigth" color="primary" (click)="moveRigth()">right</ion-button>
+    </ion-row>
+  </ion-col>
+  
+</ion-content>

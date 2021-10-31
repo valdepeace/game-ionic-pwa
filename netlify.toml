@@ -1,0 +1,7 @@
+[[redirects]]
+from = "/api"
+to = "https://game-ionic-pwa-api.valdepeace.com"
+status = 200
+force = true
+headers = { X-From = "Netlify"}
+signed = "API_SIGNATURE_TOKEN"

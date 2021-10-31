@@ -5,20 +5,16 @@ const routes: Routes = [
   {
     path: '',
     // redirectTo: 'folder/Inbox',
-    redirectTo: 'create-user',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'create-user',
-    loadChildren: () => import('./create-user/create-user.module').then( m => m.CreateUserPageModule)
-  },
-  {
-    path: 'play-screen',
-    loadChildren: () => import('./play-screen/play-screen.module').then( m => m.PlayScreenPageModule)
+    path: 'game',
+    loadChildren: () => import('./game/game.module').then( m => m.GamePageModule)
   }
 ];
 

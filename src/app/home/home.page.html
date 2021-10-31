@@ -1,0 +1,18 @@
+<ion-content [fullscreen]="true">
+    <form [formGroup]="form" (ngSubmit)="logForm()" validate>      
+      <ion-col >
+        <ion-row class="ion-justify-content-center">
+          <ion-icon name="person-circle" size="large" ></ion-icon>            
+        </ion-row>
+          <ion-row class="ion-justify-content-center">
+            <ion-label stacked>Create new player</ion-label>
+          </ion-row>
+          <ion-row class="ion-justify-content-center">
+            <ion-input id="nick" class="ion-text-center" type="text" formControlName="nick"></ion-input>      
+          </ion-row>
+          <ion-row class="ion-justify-content-center">
+            <ion-button id="join" color="primary" type="submit" [disabled]="!form.valid">JOIN</ion-button>      
+          </ion-row>          
+      </ion-col>      
+    </form>  
+</ion-content>

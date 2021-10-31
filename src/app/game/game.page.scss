@@ -1,0 +1,18 @@
+ion-content {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;    
+   }
+
+   div{
+    position: relative;  
+    background-image: url("/assets/images/capguy-walk.png"); 
+    width: 75px; 
+    height: 132px; 
+  }
+  
+  .facing-left{
+    transform: scaleX(-1); 
+  }
